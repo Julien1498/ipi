@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: OperationTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.076 s <<< FAILURE! - in OperationTest
-testDivision  Time elapsed: 0.009 s  <<< FAILURE!
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.069 s <<< FAILURE! - in OperationTest
+testDivision  Time elapsed: 0.011 s  <<< FAILURE!
 org.opentest4j.AssertionFailedError: Expected java.lang.ArithmeticException to be thrown, but nothing was thrown.
 	at OperationTest.testDivision(OperationTest.java:62)
 

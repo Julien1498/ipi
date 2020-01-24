@@ -31,6 +31,7 @@
                           <Component id="button7" pref="108" max="32767" attributes="0"/>
                           <Component id="button4" max="32767" attributes="0"/>
                           <Component id="button1" max="32767" attributes="0"/>
+                          <Component id="buttonPoint" alignment="1" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -41,20 +42,19 @@
                       </Group>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="button9" pref="109" max="32767" attributes="0"/>
-                                  <Component id="button6" alignment="0" max="32767" attributes="0"/>
-                                  <Component id="button3" alignment="0" max="32767" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="buttonEgal" linkSize="2" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="buttonDiv" linkSize="2" alignment="1" max="32767" attributes="0"/>
-                                  <Component id="buttonX" linkSize="2" alignment="1" max="32767" attributes="0"/>
-                              </Group>
+                          <Component id="button9" pref="109" max="32767" attributes="0"/>
+                          <Component id="button6" alignment="0" max="32767" attributes="0"/>
+                          <Component id="button3" alignment="0" max="32767" attributes="0"/>
+                          <Component id="buttonClear" max="32767" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="buttonEgal" linkSize="2" alignment="1" max="32767" attributes="0"/>
+                              <Component id="buttonDiv" linkSize="2" alignment="1" max="32767" attributes="0"/>
+                              <Component id="buttonX" linkSize="2" alignment="1" max="32767" attributes="0"/>
                           </Group>
-                          <Component id="buttonClear" alignment="1" max="32767" attributes="0"/>
+                          <Component id="buttonNeg" alignment="1" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" attributes="0">
@@ -106,9 +106,13 @@
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="button0" max="32767" attributes="0"/>
-                  <Group type="102" attributes="0">
+                  <Component id="buttonPoint" alignment="1" max="32767" attributes="0"/>
+                  <Group type="102" alignment="1" attributes="0">
                       <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
-                      <Component id="buttonClear" min="-2" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="buttonClear" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="buttonNeg" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
               <EmptySpace min="-2" max="-2" attributes="0"/>
@@ -259,7 +263,24 @@
         <Property name="label" type="java.lang.String" value="Clear"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="buttonClearActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actionPerf"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="buttonPoint">
+      <Properties>
+        <Property name="actionCommand" type="java.lang.String" value="1"/>
+        <Property name="label" type="java.lang.String" value="VIRGULE"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actionPerf"/>
+      </Events>
+    </Component>
+    <Component class="java.awt.Button" name="buttonNeg">
+      <Properties>
+        <Property name="label" type="java.lang.String" value="+/-"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actionPerf"/>
       </Events>
     </Component>
   </SubComponents>
